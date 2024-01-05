@@ -1,0 +1,30 @@
+@use "../../foundation/mixin" as mixin;
+@use "../../foundation/variables" as var;
+
+//flex-set()サンプル
+.p-col2sample {
+	@include mixin.flex-set();
+}
+.p-col3sample {
+	@include mixin.flex-set(3, 30, 30, $spmarginV: 10);
+}
+.p-col4sample {
+	@include mixin.flex-set(4, 30, 50, 2, 10, 20);
+}
+.p-col5sample {
+	@include mixin.flex-set($col: 5, $spcol: 2);
+}
+
+//flex-2col()サンプル
+.p-2colsample1 {
+	@include mixin.flex-2col();
+}
+.p-2colsample2 {
+	@include mixin.flex-2col($spchange: true);
+}
+.p-2colsample3 {
+	@include mixin.flex-2col(40%, 58%, 'center');
+}
+.p-2colsample4 {
+	@include mixin.flex-2col(25%, 73%, $sp1col: false);
+}

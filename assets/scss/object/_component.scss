@@ -1,0 +1,62 @@
+@use "../foundation/mixin" as mixin;
+@use "../foundation/variables" as var;
+
+// 縦横比指定
+.c-aspectRatio {
+	position: relative;
+	width: 100%;
+
+	&__inside {
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// チェックボックス、ラジオボタン
+.c-inputCheckbox,
+.c-inputRadio {
+	&__input {
+		display: none;
+	}
+	&__mark {
+		position: relative;
+		padding: 0 0 0 30px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #ccc;
+			width: 20px;
+			height: 20px;
+		}
+		&::after {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			background: #0000ff;
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+.c-inputRadio {
+	&__mark {
+		&::before,
+		&::after {
+			border-radius: 50%;
+		}
+	}
+}
+:checked {
+	+ .c-inputCheckbox,
+	+ .c-inputRadio {
+		&__mark::after {
+			content: "";
+		}
+	}
+}

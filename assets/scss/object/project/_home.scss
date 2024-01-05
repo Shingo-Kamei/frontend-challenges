@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@use "../../foundation/mixin" as mixin;
+@use "../../foundation/variables" as var;
+
+p {
+    font-size: 19px;
+    color: red;
+}
+

@@ -1,0 +1,60 @@
+@use "mixin" as mixin;
+@use "variables" as var;
+
+html {
+	font-size: 62.5%; /* 10px / 16px * 100 */
+	
+	@media screen and (max-width: 750px) {
+		font-size: 2.666vw; /* 10px / 375px * 100 */
+	}
+}
+
+body {
+	line-height: 1.8;
+	font-family: var.$font-family-basic;
+}
+
+@include mixin.deviceSP {
+	body {
+		line-height: 1.5;
+		min-width: 1%;
+		overflow-x: hidden;
+		position: relative;
+	}
+}
+
+img {
+	image-rendering: -webkit-optimize-contrast;
+}
+
+/* mouseover
+--------------------------------------------------*/
+@include mixin.devicePC {
+	.over {
+		&:hover {
+			opacity: 0.6;
+			transition: opacity 0.3s;
+		}
+	}
+}
+
+label {
+	cursor: pointer;
+}
+
+/* link
+--------------------------------------------------*/
+a {
+	color: #0851d7;
+	transition: all 0.4s;
+
+	&:link,
+	&:active,
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

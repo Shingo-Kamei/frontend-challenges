@@ -1,0 +1,46 @@
+@use "../foundation/mixin" as mixin;
+@use "../foundation/variables" as var;
+
+/* --------------------------------------------------
+  display
+-------------------------------------------------- */
+@include mixin.deviceSP {
+	.u-pc {display: none;}
+}
+@include mixin.devicePC {
+	.u-sp {display: none;}
+}
+
+/* --------------------------------------------------
+  cleafix
+-------------------------------------------------- */
+.u-clearfix {
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}
+
+/* --------------------------------------------------
+  align
+-------------------------------------------------- */
+.u-alignL {text-align: left;}
+.u-alignC {text-align: center;}
+.u-alignR {text-align: right;}
+
+/* --------------------------------------------------
+  margin
+-------------------------------------------------- */
+.u-margin {
+	&.-short {margin-bottom: 16px;}
+	&.-middle {margin-bottom: 32px;}
+	&.-large {margin-bottom: 64px;}
+}
+
+/* --------------------------------------------------
+  padding
+-------------------------------------------------- */
+// 縦横比指定
+.-ratio16-9 {padding-top: calc(9/16) * 100%;}
+.-ratio4-3 {padding-top: calc(3/4) * 100%;}
