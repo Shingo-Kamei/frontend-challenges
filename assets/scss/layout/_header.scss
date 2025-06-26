@@ -2,7 +2,15 @@
 @use "../foundation/variables" as var;
 
 .l-header {
-    height: 80px;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var.$background_color_white;
+    opacity: 0.8;
     .l-header__container {
         max-width: 1000px;
         height: 100%;

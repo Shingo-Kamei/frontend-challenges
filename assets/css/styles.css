@@ -587,7 +587,15 @@ a:hover, a:focus {
 }
 
 .l-header {
-  height: 80px;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  padding: 20px 60px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #fff;
+  opacity: 0.8;
 }
 .l-header .l-header__container {
   max-width: 1000px;
@@ -764,7 +772,6 @@ a:hover, a:focus {
 
 .u-clearfix .u-clearfix__fruitImg {
   width: 100%;
-  margin: 14px 45px 0 40px;
   position: relative;
 }
 .u-clearfix .u-clearfix__fruitImg--hidden {
@@ -776,6 +783,7 @@ a:hover, a:focus {
 }
 .u-clearfix .u-clearfix__fruitImg--hidden img {
   width: 100%;
+  margin-top: 109px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;

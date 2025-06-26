@@ -45,16 +45,15 @@
 .-ratio16-9 {padding-top: calc(9/16) * 100%;}
 .-ratio4-3 {padding-top: calc(3/4) * 100%;}
 
+// ------------------------------------------
+//header
+// ------------------------------------------
 .u-clearfix {
   .u-clearfix__fruitImg {
     width: 100%;
-    margin: 14px 45px 0 40px;
     position: relative;
 }
-//header
 .u-clearfix__fruitImg--hidden {
-	// max-width: 1800px;
-    // height: 596px;
 	height: 752px;
     margin: 25px 53px 131px 53px;
     overflow: hidden;
@@ -64,14 +63,16 @@
         
     }
     img {
-      width: 100%;
-    //   height: 100%;
-      object-fit: cover;
-      display: block;
+		width: 100%;
+		margin-top: 109px;
+		object-fit: cover;
+		display: block;
     }
   }
 }
+// ------------------------------------------
 //slide
+// ------------------------------------------
 .u-slide {
   overflow: hidden;
   width: 100%;
@@ -107,45 +108,9 @@
   }
 }
 
-// .u-clearfix__imgLoopSlide {
-// 	display: flex;
-//   width: 100%;
-//   height: 100px;
-//   overflow: hidden;
-// 	// display: flex;
-// 	// justify-content: space-between;
-// 	// align-items: center;
-// 	// margin-bottom: 35px;
-// 	.aaa {
-// width: auto;
-//   height: 100%;
-// 	}
-// 	@keyframes loop {
-//   0% {
-//     transform: translateX(100%);
-//   }
-//   to {
-//     transform: translateX(-100%);
-//   }
-// }
-
-// @keyframes loop2 {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   to {
-//     transform: translateX(-200%);
-//   }
-// }
-// .aaa:first-child {
-//   animation: loop 50s -25s linear infinite;
-// }
-
-// .aaa:last-child {
-//   animation: loop2 50s linear infinite;
-// }
-// }
+// ------------------------------------------
 //twoImg-section
+// ------------------------------------------
 .u-fruitExite {
 	width: 100%;
 	max-width: 1190px;
@@ -262,7 +227,9 @@
 		}
 	}
 }
+// ------------------------------------------
 //news
+// ------------------------------------------
 .u-news {
 	width: 100%;
 	.u-news__element {
@@ -400,7 +367,9 @@
 		}
 	}
 }
+// ------------------------------------------
 //people
+// ------------------------------------------
 .u-people {
 	width: 100%;
 	background-color: var.$color_title_red;
@@ -513,7 +482,9 @@
 		}
 	}
 }
+// ------------------------------------------
 //features
+// ------------------------------------------
 .u-features {
 	margin-top: 173px;
 	.u-features__container {
