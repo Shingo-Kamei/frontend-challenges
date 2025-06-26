@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 //ブレイクポイント
+$breakPointSp: 378px;
 $breakPoint: 750px;
 $breakPoint-m: 1100px;
 
@@ -13,6 +14,9 @@ $background_color_white: #fff;
 $background_color_black: #000;
 $background_color_pink: #f0e6e3;
 $background_color_beige: #f3efea;
+$color_list_brown: #514327;
+$color_title_red: #C03842;
+$color_title_gray: #776F65;
 
 //フォントファミリー
 $font-family-basic:
@@ -23,5 +27,6 @@ $font-family-basic:
     "Hiragino Kaku Gothic ProN",
     Arial,
     Meiryo,
-    sans-serif
+    sans-serif,
+    Noto Sans
 ;

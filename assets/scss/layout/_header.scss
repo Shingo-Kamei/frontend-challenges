@@ -1,2 +1,46 @@
 @use "../foundation/mixin" as mixin;
 @use "../foundation/variables" as var;
+
+.l-header {
+    height: 80px;
+    .l-header__container {
+        max-width: 1000px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .l-header__logo {
+            height: 29px;
+        }
+        .l-header__nav {
+            height: 38px;
+            .l-header__nav--ul {
+                display: flex;
+                align-items: center;
+                .l-header__nav--ul--img {
+                    height: 47px;
+                    margin-right: 9px;
+                    width: 10.88px;
+                    object-fit: contain;
+                }
+                .l-header__nav--ul--list {
+                    font-style: 400px;
+                    font-size: 16px;
+                    margin-right: 27px;
+                    color: var.$color_list_brown;
+                }
+                .l-header__nav--ul--list--fourth {
+                    font-style: 400px;
+                    font-size: 16px;
+                    color: var.$color_list_brown;
+                }
+            }
+        }
+    }
+}
+
+
+
+
